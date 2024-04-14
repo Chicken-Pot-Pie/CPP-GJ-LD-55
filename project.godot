@@ -12,7 +12,10 @@ config_version=5
 
 config/name="CPP-GJ-LD-55"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="CPP-GJ-LD-55"
 
 [editor]
 
