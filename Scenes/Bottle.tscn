@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://de3shpoxplxcw"]
+
+[ext_resource type="Script" path="res://Scripts/mini-games/PourShots/BottlePour.cs" id="1_dq1e2"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pny58"]
+
+[node name="Bottle" type="CharacterBody2D" node_paths=PackedStringArray("ray")]
+script = ExtResource("1_dq1e2")
+ray = NodePath("RayCast2D")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+rotation = -0.00486859
+target_position = Vector2(0, 100)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(24, -13)
+rotation = -0.0180135
+scale = Vector2(8.76284, -33.5782)
+texture = SubResource("PlaceholderTexture2D_pny58")

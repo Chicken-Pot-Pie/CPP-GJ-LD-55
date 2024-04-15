@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7yj2x0ekr18c"]
+
+[ext_resource type="Script" path="res://Scripts/mini-games/PourShots/Glass.cs" id="1_coemc"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2f5wu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qajuq"]
+size = Vector2(1.375, 1.375)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_coemc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.96046e-08, 5.96046e-08)
+scale = Vector2(1.375, 1.375)
+texture = SubResource("PlaceholderTexture2D_2f5wu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qajuq")

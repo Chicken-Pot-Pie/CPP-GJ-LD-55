@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7lc10din1o4e"]
+
+[ext_resource type="PackedScene" uid="uid://de3shpoxplxcw" path="res://Scenes/Bottle.tscn" id="1_ff3gv"]
+[ext_resource type="PackedScene" uid="uid://b7yj2x0ekr18c" path="res://Scenes/Glass.tscn" id="2_ckp2h"]
+
+[node name="MiniGamePourShots" type="Node2D"]
+
+[node name="Bottle" parent="." instance=ExtResource("1_ff3gv")]
+position = Vector2(0, -134)
+
+[node name="Glass" parent="." instance=ExtResource("2_ckp2h")]
+position = Vector2(0, -18)
+scale = Vector2(15.691, 25.2502)
+name = "Glass1"
+
+[node name="Glass2" parent="." instance=ExtResource("2_ckp2h")]
+position = Vector2(44, -18)
+scale = Vector2(15.691, 25.2502)
+name = "Glass2"
+
+[node name="Glass3" parent="." instance=ExtResource("2_ckp2h")]
+position = Vector2(84, -17)
+scale = Vector2(15.691, 25.2502)
+name = "Glass3"
+
+[node name="Camera2D" type="Camera2D" parent="."]
